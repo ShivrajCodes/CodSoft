@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    display: flex;
+    font-family:'Roboto Mono', monospace;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    max-width: 300px; 
+}
+
+.display {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+button.orange {
+    background-color: orange;
+    color: black;
+}
+button:hover {
+    background-color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px; 
+    padding-top: 20px; 
+}
+
+
+button:active {
+    transform: scale(0.95); /* Add a scale effect on button press */
+}
+
+
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+        width: 100%;
+    }
+}

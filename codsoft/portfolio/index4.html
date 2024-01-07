@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shivraj- Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+       body {
+       margin: 0;
+       overflow: hidden;
+       margin: 0;
+       padding: 0;
+       font-family: 'Georgia', 'Times New Roman', serif;
+       background-color: #f4f4f4;
+       }
+
+          em, i {
+         font-style: italic;
+         }
+        #video-bg {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          transform: translate(-50%, -50%);
+          z-index: -1; 
+          }
+
+
+        #portfolio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #photo {
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        #about, #projects, #social {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #social a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: red;
+        }
+
+        #social img {
+            width: 30px; 
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="mybg.mp4" type="video/mp4">
+    </video>
+<div id="portfolio-container">
+    <img id="photo" src="mypfp.jpeg" alt="Your Name">
+    <div id="about">
+        <h1>Hey Folks, I am Shivraj</h1>
+        
+        <p>Hi, I am a B.Tech 1st year undergrad living in Kolkata, India. My main focus is on
+            JavaScript,which allows me to create powerful, interactive web applications. Additionally, I am passionate about nature and enjoy
+            researching different plants and their features. I also have a good taste in music.</p>
+    </div>
+    <div id="projects">
+        <h2>Projects</h2>
+        
+       <a href="https://shivraj200412.github.io/MoonSignCal/" target="_blank">
+        <p>🔗A Moon Sign Calculator one can use to know his/her moon sign</p>
+       </a>
+    </div>
+    <div id="social">
+        <h2>Connect with Me</h2>
+        <a href="https://discordapp.com/users/629219100484304916" target="_blank">
+            <img src="discord-icon.png" alt="Discord">
+        </a>
+        <a href="https://instagram.com/ok_shivraj" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://open.spotify.com/user/31zri3xaomhnznjpruw47dt5k524" target="_blank">
+            <img src="spotify-icon.png" alt="Spotify">
+        </a>
+        <a href="https://www.linkedin.com/in/shivraj-bhattacharya-516287282/" target="_blank">
+            <img src="linkedin-icon.png" alt="linkedin">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
